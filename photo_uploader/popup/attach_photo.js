@@ -373,6 +373,7 @@
 		oAjax.header("file-name",encodeURIComponent(tempFile.name));
 		oAjax.header("file-size",tempFile.size);
 		oAjax.header("file-Type",tempFile.type);
+		oAjax.header("file-path", parent.document.getElementById("dirkeycode").value);
 		oAjax.request(tempFile);
     }
     
